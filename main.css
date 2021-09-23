@@ -140,10 +140,6 @@ p {
 	grid-column: 1 / span 3;
 }
 
-#posts p {
-	margin: 0 6em 0 6em;
-}
-
 .footer {
 	grid-row: 6 / 6;
 	grid-column: 1 / span 3;
