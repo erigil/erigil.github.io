@@ -1,0 +1,208 @@
+/* Main CSS file */
+
+/* Font https://www.dotcolon.net/font/aileron */
+@font-face {
+    font-family: 'aileronregular';
+    src: url('./fonts/Aileron-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* HTML and body */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'aileronregular';
+	background-color: #B9CBD6;
+	color: #4B606D;
+	margin: auto;
+}
+
+/* Main text */
+h1 {
+	font-size: 2vw;
+	border-bottom: 0.3vw solid #4B606D;
+}
+
+h2 {
+	margin: 0 5vw 0 5vw;
+	font-size: 1.8vw;
+	padding-bottom: 1vw;
+}
+
+a {
+	text-decoration: underline;
+	color: #4B606D
+}
+
+p {
+	margin: 0 10vw 0 10vw;
+	font-size: 1.3vw;
+	padding-bottom: 1vw;
+}
+
+/* Title */
+#title {
+	margin: 2vw auto;
+	width: 32vw;
+	background-color: #4B606D;
+	color: #B9CBD6;
+	padding: 1vw;
+	box-shadow: 0 0.3vw 0.3vw rgba(54, 54, 54, 0.8);
+	z-index: 11;
+	outline: solid 0.4vw #B9CBD6;
+	outline-offset: -1vw;
+	border-radius: 2vw;
+	text-align: center;
+}
+
+#title a {
+	color: #B9CBD6;
+	font-size: 5vw;
+	text-decoration: none;
+	text-shadow: 0 0.3vw 0.3vw rgba(54, 54, 54, 0.8);
+}
+
+#title a:hover {
+	color: #CED8DE;
+	transition: 0.5s;
+}
+
+/* Navigation */
+#nav {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	margin: auto;
+	padding: 1.5vw;
+	width: 40vw;
+	background-color: #4B606D;
+	color: #B9CBD6;
+	box-shadow: 0 0.3vw 0.3vw rgba(54, 54, 54, 0.8);
+	z-index: 10;
+	text-align: center;
+	outline: solid 0.4vw #B9CBD6;
+	outline-offset: -1vw;
+	border-radius: 2vw;
+}
+
+
+#nav a {
+	color: #B9CBD6;
+	font-size: 2.5vw;
+	text-decoration: none;
+	padding: 1vw;
+	text-shadow: 0 0.3vw 0.3vw rgba(54, 54, 54, 0.8);
+}
+
+#nav a:hover {
+	color: #CED8DE;
+	transition: 0.5s;
+}
+
+
+/* Grid */
+.content {
+	display: grid;
+	grid-template-columns: 40vw 0.3vw 40vw;
+	justify-content: center;
+}
+
+/* About */
+#about {
+	grid-row: 1 / 1;
+	grid-column: 1 / span 3;
+	text-align: center;
+}
+
+
+#about a {
+	font-size: 1.8vw;
+	margin: 1vw;
+}
+
+#about h1 {
+	text-align: left;
+}
+
+.hi {
+	grid-row: 2 / 2;
+	grid-column: 1 / span 3;
+}
+
+.history {
+	grid-row: 3 / 3;
+	grid-column: 1 / span 3;
+}
+
+
+/* Projects */
+#projects {
+	grid-row: 4 / 4;
+	grid-column: 1 / span 3;
+}
+
+/* Posts section */
+#posts {
+	grid-row: 5 / 5;
+	grid-column: 1 / span 3;
+}
+
+#posts p {
+	margin: 0 5vw 0 5vw;
+}
+
+.footer {
+	grid-row: 6 / 6;
+	grid-column: 1 / span 3;
+	justify-self: center;
+}
+
+.footer p {
+	font-size: 0.9vw;
+	padding-top: 3vw;
+	margin: auto;
+}
+
+/* Blog posts */
+#post {
+	grid-row: 1 / 1;
+	grid-column: 1 / span 3;
+}
+
+/* Code/Command blocks */
+#code {
+	margin: 1vw auto 1vw auto;
+	background-color: #4B606D;
+	color: #B9CBD6;
+	padding: 1vw;
+	width: 60vw;
+	border-radius: 2vw;
+}
+
+#code p {
+	margin: auto;
+	color: #B9CBD6;
+}
+
+/* Image blocks */
+#image {
+	margin: 1vw auto 1vw auto;
+	background-color: #4B606D;
+	color: #B9CBD6;
+	padding: 1vw;
+	width: 60vw;
+	border-radius: 2vw;
+}
+
+#image p {
+	width: 57vw;
+}
+
+#image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 2vw;
+}

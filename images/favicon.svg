@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="32.0px" height="32.0px"><svg width="32.0px" height="32.0px" viewBox="0 0 32.0 32.0" version="1.1" id="SvgjsSvg1039" sodipodi:docname="logo.svg" inkscape:version="1.1 (c68e22c387, 2021-05-23)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview id="SvgjsSodipodi:namedview1038" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1" inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:document-units="px" showgrid="false" inkscape:zoom="16" inkscape:cx="21.4375" inkscape:cy="20.21875" inkscape:window-width="1920" inkscape:window-height="1005" inkscape:window-x="0" inkscape:window-y="25" inkscape:window-maximized="1" inkscape:current-layer="layer1" showguides="true" inkscape:guide-bbox="true" inkscape:snap-bbox="true" inkscape:snap-page="true">
+    <inkscape:grid type="xygrid" id="SvgjsInkscape:grid1037"></inkscape:grid>
+    <sodipodi:guide position="16,16" orientation="0,-1" id="SvgjsSodipodi:guide1036"></sodipodi:guide>
+    <sodipodi:guide position="16,16" orientation="1,0" id="SvgjsSodipodi:guide1035"></sodipodi:guide>
+  </sodipodi:namedview>
+  <defs id="SvgjsDefs1034"></defs>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="SvgjsG1033">
+    <path id="SvgjsPath1032" style="fill:#597484;fill-opacity:1;stroke-width:1" d="M 16,0 A 16,16 0 0 0 0,16 h 16 z"></path>
+    <path id="SvgjsPath1031" style="fill:#597484;fill-opacity:1;stroke-width:0.25" d="M 32,4 A 4,4 0 0 0 28,0 v 4 z"></path>
+    <rect style="fill:#4b606d;fill-opacity:1;stroke-width:0.7746" id="SvgjsRect1030" width="12" height="4" x="16" y="2"></rect>
+    <rect style="fill:#4b606d;fill-opacity:1;stroke-width:0.223608" id="SvgjsRect1029" width="2" height="2" x="28" y="4"></rect>
+    <rect style="fill:#4b606d;fill-opacity:1;stroke-width:0.836665" id="SvgjsRect1028" width="14" height="4" x="16" y="14"></rect>
+    <rect style="fill:#4b606d;fill-opacity:1;stroke-width:0.7746" id="SvgjsRect1027" width="12" height="4" x="16" y="26"></rect>
+    <path id="SvgjsPath1026" style="fill:#3a4b54;fill-opacity:1;stroke-width:1" d="M 0,16 A 16,16 0 0 0 16,32 V 16 Z"></path>
+    <path id="SvgjsPath1025" style="fill:#3a4b54;fill-opacity:1;stroke-width:0.25" d="m 28,30 v 2 a 4,4 0 0 0 3.458984,-2 z"></path>
+    <path id="SvgjsPath1024" style="fill:#4b606d;stroke-width:0.875" d="M 16,30 V 2 A 14,14 0 0 0 2,16 14,14 0 0 0 16,30 Z"></path>
+    <rect style="fill:#3a4b54;fill-opacity:1;stroke-width:0.547726" id="SvgjsRect1023" width="12" height="2" x="18" y="6"></rect>
+    <rect style="fill:#3a4b54;fill-opacity:1;stroke-width:0.3873" id="SvgjsRect1022" width="6" height="2" x="-12" y="16" transform="rotate(-90)"></rect>
+    <rect style="fill:#597484;fill-opacity:1;stroke-width:0.547726" id="SvgjsRect1021" width="12" height="2" x="16" y="0"></rect>
+    <rect style="fill:#3a4b54;fill-opacity:1;stroke-width:0.591613" id="SvgjsRect1020" width="14" height="2" x="16" y="18"></rect>
+    <rect style="fill:#3a4b54;fill-opacity:1;stroke-width:0.31623" id="SvgjsRect1019" width="2" height="4" x="16" y="20"></rect>
+    <rect style="fill:#597484;fill-opacity:1;stroke-width:0.547727" id="SvgjsRect1018" width="12" height="2" x="18" y="12"></rect>
+    <rect style="fill:#3a4b54;fill-opacity:1;stroke-width:0.547726" id="SvgjsRect1017" width="12" height="2" x="16" y="30"></rect>
+    <rect style="fill:#597484;fill-opacity:1;stroke-width:0.591612" id="SvgjsRect1016" width="14" height="2" x="18" y="24"></rect>
+    <path id="SvgjsPath1015" style="fill:#4b606d;fill-opacity:1;stroke-width:0.125" d="M 30,4 A 2,2 0 0 0 28,2 v 2 z"></path>
+    <path id="SvgjsPath1014" style="fill:#4b606d;fill-opacity:1;stroke-width:0.125" d="m 28,30 a 2,2 0 0 0 2,-2 h -2 z"></path>
+    <rect style="fill:#597484;fill-opacity:1;stroke-width:0.223608" id="SvgjsRect1013" width="2" height="2" x="30" y="4"></rect>
+    <rect style="fill:#597484;fill-opacity:1;stroke-width:0.3873" id="SvgjsRect1012" width="2" height="6" x="30" y="12"></rect>
+    <rect style="fill:#597484;fill-opacity:1;stroke-width:0.223608" id="SvgjsRect1011" width="2" height="2" x="30" y="26"></rect>
+    <rect style="fill:#4b606d;fill-opacity:1;stroke-width:0.223608" id="SvgjsRect1010" width="2" height="2" x="28" y="26"></rect>
+    <path id="SvgjsPath1009" style="fill:#597484;fill-opacity:1;stroke-width:0.223608" d="m 18,14 v -2 l -2,2 z"></path>
+    <path id="SvgjsPath1008" style="fill:#3a4b54;fill-opacity:1;stroke-width:0.223608" d="m 16,12 v 2 l 2,-2 z"></path>
+    <path id="SvgjsPath1007" style="fill:#597484;fill-opacity:1;stroke-width:0.223608" d="m 18,26 v -2 l -2,2 z"></path>
+    <path id="SvgjsPath1006" style="fill:#3a4b54;fill-opacity:1;stroke-width:0.223608" d="m 16,24 v 2 l 2,-2 z"></path>
+    <path id="SvgjsPath1005" style="fill:#597484;fill-opacity:1;stroke-width:0.223608" d="m 32,18 h -2 l 2,2 z"></path>
+    <path id="SvgjsPath1004" style="fill:#3a4b54;fill-opacity:1;stroke-width:0.223608" d="m 30,20 h 2 l -2,-2 z"></path>
+    <path id="SvgjsPath1003" style="fill:#597484;fill-opacity:1;stroke-width:0.223608" d="m 32,6 h -2 l 2,2 z"></path>
+    <path id="SvgjsPath1002" style="fill:#3a4b54;fill-opacity:1;stroke-width:0.223608" d="m 30,8 h 2 L 30,6 Z"></path>
+    <path id="SvgjsPath1001" style="fill:#597484;fill-opacity:1;stroke-width:0.25" d="m 28,28 v 2 h 3.464844 A 4,4 0 0 0 32,28 Z"></path>
+    <rect style="fill:#4b606d;fill-opacity:1;stroke-width:0.223608" id="SvgjsRect1000" width="2" height="2" x="28" y="28"></rect>
+  </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+</style></svg>
