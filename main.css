@@ -43,24 +43,16 @@ p {
 
 /* Title */
 #title {
-	margin: 2vw auto;
-	width: 40%;
-	background-color: #4B606D;
-	color: #B9CBD6;
-	padding: 1.2em;
-	box-shadow: 0 0.4em 0.4em rgba(54, 54, 54, 0.8);
-	z-index: 11;
-	outline: solid 0.5em #B9CBD6;
-	outline-offset: -1.2em;
-	border-radius: 2.2em;
+	margin: auto;
+	padding: 3em;
 	text-align: center;
 }
 
 #title a {
-	color: #B9CBD6;
-	font-size: 4.5em;
+	color: #4B606D;
+	font-size: 6.5em;
 	text-decoration: none;
-	text-shadow: 0 0.3vw 0.3vw rgba(54, 54, 54, 0.8);
+	text-shadow: 0 0.05em 0.05em rgba(54, 54, 54, 0.8);
 }
 
 #title a:hover {
@@ -75,7 +67,7 @@ p {
 	top: 0;
 	margin: auto;
 	padding: 1.7em;
-	width: 95%;
+	width: 90%;
 	background-color: #4B606D;
 	color: #B9CBD6;
 	box-shadow: 0 0.4em 0.4em rgba(54, 54, 54, 0.8);
@@ -92,7 +84,7 @@ p {
 	font-size: 2.7em;
 	text-decoration: none;
 	padding: 0.5em;
-	text-shadow: 0 0.3vw 0.3vw rgba(54, 54, 54, 0.8);
+	text-shadow: 0 0.1em 0.1em rgba(54, 54, 54, 0.8);
 }
 
 #nav a:hover {
