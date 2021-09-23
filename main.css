@@ -23,7 +23,7 @@ body {
 /* Main text */
 h1 {
 	font-size: 2.5em;
-	border-bottom: 0.3vw solid #4B606D;
+	border-bottom: 0.1em solid #4B606D;
 }
 
 h2 {
@@ -44,7 +44,7 @@ p {
 /* Title */
 #title {
 	margin: 2vw auto;
-	width: 35%;
+	width: 40%;
 	background-color: #4B606D;
 	color: #B9CBD6;
 	padding: 1.2em;
@@ -58,7 +58,7 @@ p {
 
 #title a {
 	color: #B9CBD6;
-	font-size: 5.8em;
+	font-size: 4.5em;
 	text-decoration: none;
 	text-shadow: 0 0.3vw 0.3vw rgba(54, 54, 54, 0.8);
 }
