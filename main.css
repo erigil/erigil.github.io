@@ -44,7 +44,7 @@ p {
 /* Title */
 #title {
 	margin: 2vw auto;
-	width: 36em;
+	width: 35%;
 	background-color: #4B606D;
 	color: #B9CBD6;
 	padding: 1.2em;
@@ -60,7 +60,7 @@ p {
 	color: #B9CBD6;
 	font-size: 5.8em;
 	text-decoration: none;
-	text-shadow: 0 0.4em 0.4em rgba(54, 54, 54, 0.8);
+	text-shadow: 0 0.3vw 0.3vw rgba(54, 54, 54, 0.8);
 }
 
 #title a:hover {
@@ -75,7 +75,7 @@ p {
 	top: 0;
 	margin: auto;
 	padding: 1.7em;
-	width: 48em;
+	width: 40%;
 	background-color: #4B606D;
 	color: #B9CBD6;
 	box-shadow: 0 0.4em 0.4em rgba(54, 54, 54, 0.8);
@@ -104,7 +104,7 @@ p {
 /* Grid */
 .content {
 	display: grid;
-	grid-template-columns: 40vw 0.3vw 40vw;
+	grid-template-columns: 40% 0.3% 40%;
 	justify-content: center;
 }
 
