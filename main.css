@@ -28,7 +28,6 @@ h1 {
 
 h2 {
 	font-size: 2.1em;
-	padding-bottom: 0.5em;
 }
 
 a {
@@ -38,7 +37,6 @@ a {
 
 p {
 	font-size: 1.6em;
-	padding-bottom: 0.5em;
 }
 
 /* Title */
@@ -52,11 +50,11 @@ p {
 	color: #4B606D;
 	font-size: 6.5em;
 	text-decoration: none;
-	text-shadow: 0 0.05em 0.05em rgba(54, 54, 54, 0.8);
+	border-bottom: 0.05em solid #4B606D;
 }
 
 #title a:hover {
-	color: #CED8DE;
+	color: #698596;
 	transition: 0.5s;
 }
 
