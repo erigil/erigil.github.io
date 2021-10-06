@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../../../images/favicon.svg">
+	<link rel="icon" type="image/png" href="../../../images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../main.css" type="text/css" charset="utf-8" />
+    
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Website details -->
+    <title>erigil - My Experience With Getting FreeBSD to Run On My Desktop</title>
+    <meta name="kerywords" content="Personal, OS">
+    <meta name="description" content="Personal website for Eric Gilkes">
+    <meta name="author" content="Eric Gilkes">
+</head>
+<body>    
+    <!-- Title -->
+    <div id="title">
+		<a href="../../../index.html">Eric Gilkes</a>
+    </div>
+    
+    <!-- Navigation -->
+    <div id="nav">
+		<a href="../../../index.html#about">About</a>
+		<a href="../../../index.html#projects">Projects</a>
+		<a href="../../../index.html#posts">Posts</a>
+    </div>
+    
+    <!-- About section -->
+    <div class="content">
+		<div id="post">
+			<h1>2021-10-05: My Experience With Getting FreeBSD to Run On My Desktop</h1>
+			<h2>Intro</h2>
+			<p>I first started using FreeBSD back in 2014; mostly for home servers and 
+			various projects. I did run it on my laptop for a little bit back then, but it 
+			had issues with my hardware. I ended sticking with Linux on my laptop.
+			Fast forward to today, I now have FreeBSD running on my desktop and most of the 
+			programs I use work really well. The only exceptions are a few alternatives that I 
+			decided to use and a game that just won't work.</p>
+			
+			<h2>Hardware & First Steps</h2>
+			
+			<p>I installed FreeBSD on a computer with 2x 8GB DDR4 RAM @ 3200mhz Ryzen 5 2600X, 
+			Radeon RX 580, 256GB SSD, 1TB HDD @ 7200rpm, ASRock B450 Pro4 Motherboard 
+			and a Wi-Fi card that I don't remember the name of but it uses an unsupported 
+			Realtek chipset.
+			<br />
+			<br />
+			I decided to go with FreeBSD 13 RELEASE because I very much prefer point releases 
+			and stability over rolling-release or bleeding edge. As for the filesystem I went 
+			wiuth Encrypted ZFS. I have no reason to use UFS over ZFS and I really like what 
+			ZFS offers. The installation process went as expected, painless with the only 
+			issue being an unsupported Wi-Fi card.</p>
+			
+			<h2>Where The Issues Begin</h2>
+			<p>My first goal was to get XFCE and LightDM up and running smoothly. Simple enoughr right? 
+			Not so much. While I was able to install XFCE and drm-kmod/amdgpu, I got a kernel 
+			panic when I rebooted my computer. Turns out there's an issue with the AMDGPU drivers 
+			and UEFI. Thankfully the fix is pretty simple, I just needed to add the following to 
+			/boot/loader.conf:</p>
+			
+			<div class="code">
+				<p>hw.syscons.disable=1</p>
+			</div>
+			
+			<p>After that I was able to boot into LightDM and log into XFCE. However, I ran into 
+			another problem. Really bad stuttering every 5-10 seconds. I had this issue a yearor so ago when 
+			trying to run FreeBSD on my desktop, but I was unable to find an answer then. Thankfully 
+			this time I was able to find a solution, although I'm not sure why it works. It also seems that 
+			<a href="https://forums.freebsd.org/threads/ryzen-micro-stutter-fix.81483/">others</a> 
+			don't 100% know why either. Anyway just add the follwing to your /etc/sysctl.conf to fix it:</p>
+			
+			<div class="code">
+				<p>kern.sched.steal_thresh=1</p>
+			</div>
+			
+			<h2> Smooth Sailing... For Now</h2>
+			
+			<p>Once those issues were resolved, I was back on track. Spent some time configure my desktop 
+			and installed most of the programs/software that I use Also had to use some alternatives. 
+			lot's of them do require a little  extra configuration though. It's just adding one or two 
+			lines to /etc/rc.conf, I expected that.
+			<br />
+			<br />
+			Next up was Linux compatibility, and I was pleasantly surprised with how easy it was. All I 
+			needed to do was mount a few directories, install some packages, and enable some services. A few Linux 
+			programs were already in the ports/packages repository and it was just a matter of installing them. 
+			That's not to say all Linux software is that simple to run. If it's not in the ports you'll have to manually 
+			install it on your system and copy the apropriate libraries from a Linux system to your FreeBSD installation. You 
+			could also experiment with running Linux Jails but that's a lot more work for the intial setup. It does however 
+			tie nicely to my next topic...
+			<br />
+			<br />
+			Jails! How I love Jails, so useful and dead simple to use with the right tools. The default method of installing 
+			Jails can be a pain. Thankfully there's a lot of tools out there to make it easier. I use <a href="https://bastillebsd.org/">Bastille</a> 
+			myself, because it has ZFS support, Dynamic IP support, and it's as painless as it gets. You can also create Linux 
+			Jails with it fairly easily, which I plan on doing at some point. Anyway, I installed a few Jails and it went well.</p>
+			
+			<h2>Another Issue!</h2>
+			<p>WINE, has been one huge pain. I wanted to  install WINE so I could play a game I like. Downloaded 
+			and installed and ran the executable. Main menu pops up, and crashed the second I clicked play. Not 
+			a problem I remembered I needed DXVK too. I Installed it and went to play the game. Turns out 
+			WINE Stable on FreeBSD isn't complied with DXVK support. WINE Devel is though so I switched to 
+			that. Wine Devel is totally broken on FreeBSD. I tried everything I could to get it to work but 
+			it refused. I was really regretting using packages instead of ports. I could hjave just compiled 
+			WINE Stable with DXVK support. Needless to say I never got that game working.</p>
+			
+			<h2>Conclusion</h2>
+			<p>Overall FreeBSD is a great OS and probably my favourite. Its rock solid lightweight, and full of features. 
+			However, its still a little rough when it comes to desktop use (As explained in this post). While hardware 
+			support has drastically improved over the years, there's still some common hardware that's just unsupported. 
+			Also don't expect to be playing a lot of games on it either. While there are efforts to bring Steam and 
+			Proton to it, most of your games probably won't work on it. 
+			<br />
+			<br />
+			Would I reccomend FreeBSD on the desktop? For the average person, no. For people who more tech savy; 
+			sure, why not? Just expect some issues.</p>
+		</div>
+		
+		<div class="footer">
+			<p>Website made from scratch by Eric Gilkes.</p>
+		</div>
+	</div>
+</body>
+</html>
