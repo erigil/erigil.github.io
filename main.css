@@ -157,7 +157,7 @@ p {
 }
 
 /* Code/Command blocks */
-#code {
+.code {
 	margin: 1.2em auto 1.2em auto;
 	background-color: #4B606D;
 	color: #B9CBD6;
@@ -166,13 +166,13 @@ p {
 	border-radius: 2vw;
 }
 
-#code p {
+.code p {
 	margin: auto;
 	color: #B9CBD6;
 }
 
 /* Image blocks */
-#image {
+.image {
 	margin: 1.2em auto 1.2em auto;
 	background-color: #4B606D;
 	color: #B9CBD6;
@@ -181,11 +181,11 @@ p {
 	border-radius: 2.2em;
 }
 
-#image p {
+.image p {
 	width: 62em;
 }
 
-#image img {
+.image img {
 	max-width: 100%;
 	height: auto;
 	border-radius: 2.23m;
